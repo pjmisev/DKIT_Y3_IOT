@@ -1,0 +1,19 @@
+[project]
+name = "dkit-y3-iot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "pjmisev", email = "pijus.misevicius@outlook.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pyttsx3>=2.99",
+]
+
+[project.scripts]
+dkit-y3-iot = "dkit_y3_iot:main"
+
+[build-system]
+requires = ["uv_build>=0.12.16,<0.13.0"]
+build-backend = "uv_build"
