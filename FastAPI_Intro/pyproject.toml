@@ -1,5 +1,5 @@
 [project]
-name = "dkit-y3-iot"
+name = "fastapi-intro"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -8,13 +8,11 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
-    "dotenv>=0.9.9",
-    "google-genai>=2.25.0",
-    "pyttsx3>=2.99",
+    "fastapi[standard]>=0.141.1",
 ]
 
 [project.scripts]
-dkit-y3-iot = "dkit_y3_iot:main"
+fastapi-intro = "fastapi_intro:main"
 
 [build-system]
 requires = ["uv_build>=0.12.16,<0.13.0"]
