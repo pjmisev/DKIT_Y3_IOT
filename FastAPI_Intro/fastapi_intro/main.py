@@ -28,7 +28,7 @@ def home(request: Request):
     return templates.TemplateResponse(request, "home.html", {"readings" : sensor_readings, "title": "Sensor Readings"})
 
 
-@app.get("/sensor_readings/{sensor_reading_id}", include_in_schema=False)
+@app.get("/sensor_readings/{sensor_reading_id}", include_in_schema=False, name="sensor_reading")
 def sensor_reading_page(request: Request, sensor_reading_id: int):
     for sensor_reading in sensor_readings:
         if sensor_reading.get('id') == sensor_reading_id:
